@@ -6,6 +6,7 @@
 	"settings": {
 		"target": "http://localhost:9200",
 		"username": "elastic",
-		"password": "changeme"
+		"password": "changeme",
+		"host" : "xpack.example.com"
 	}
 }
