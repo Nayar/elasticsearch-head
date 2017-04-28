@@ -26,6 +26,9 @@ clusters.forEach( cluster => {
 
 					res.setHeader("Access-Control-Allow-Origin", CORS_SETTINGS.origin );
 					res.setHeader("Access-Control-Allow-Methods", CORS_SETTINGS.methods );
+                                        
+					if(cluster.settings.host)
+						req.headers.host = cluster.settings.host;
 
 					if (req.method === 'OPTIONS') {
 						res.writeHead(200);
